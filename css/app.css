@@ -636,7 +636,27 @@ HEADER
 .logo p {
     color: #000;
     padding-left: 50px;
-    text-align: left
+    text-align: left;
+    margin: 0;
+    color: #fff;
+}
+
+.logo p:first-of-type {
+    color: #000;
+    padding-left: 50px;
+    text-align: left;
+    margin: 0;
+    color: #fff;
+    font-size: 40px
+}
+
+.logo p:last-of-type {
+    color: #000;
+    padding-left: 120px;
+    text-align: left;
+    margin: 0;
+    color: #fff;
+    font-size: 25px
 }
 
 .nav-links nav {
@@ -661,11 +681,32 @@ HEADER
 }
 
 .caption-text {
-    width: 70%;
+    width: 100%;
     margin: auto;
     font-size: 70px;
     font-weight: bolder;
     color: #fff;
+    text-align: center
 }
 
-.caption-border {}
+.caption-border {
+    border: 0px solid #fff;
+    width: 60%;
+    margin: auto;
+    padding: 0px 0;
+}
+
+.search-box {}
+
+.search-box .input-group {
+    width: 50%;
+    margin: auto;
+}
+
+.search-box .input-group-field {
+    background: transparent;
+}
+
+.search-box .input-group-field {
+    background: transparent;
+}
