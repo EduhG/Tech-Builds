@@ -585,8 +585,87 @@ HEADER
 =====================================================================*/
 
 #header {
-    height: 100vh;
-    background: url(../images/bg-header5.jpg);
-    background-size: cover;
+    height: calc(100vh - 10px);
+    background: url(../images/bg-header1.jpg);
+    background-position: center;
+    background-size: 100% auto;
     overflow: hidden;
+    position: relative;
 }
+
+.headerContainerWrapper {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    -webkit-transition: top 500ms ease;
+    -moz-transition: top 500ms ease;
+    -o-transition: top 500ms ease;
+    transition: top 500ms ease;
+    /* enable hardware acceleration to fix laggy transitions */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.headerContainerShadow {
+    background-color: rgba(0, 0, 0, 0.0);
+    border-bottom: 0px solid #eee;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.0);
+    position: relative;
+    z-index: 999999;
+    /* to place the header above all elements */
+}
+
+.scrollActive .headerContainerWrapper {
+    position: fixed;
+}
+
+.scrollActive .headerContainerShadow {
+    background: #FFF;
+    border-bottom: 2px solid #eee;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 999999;
+    /* to place the header above all elements */
+}
+
+.logo p {
+    color: #000;
+    padding-left: 50px;
+    text-align: left
+}
+
+.nav-links nav {
+    float: right;
+    text-align: center;
+}
+
+.nav-links nav ul li {
+    display: inline-block;
+    width: 100px;
+}
+
+.nav-links nav ul li a {
+    font-size: 15px;
+}
+
+.caption-container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.caption-text {
+    width: 70%;
+    margin: auto;
+    font-size: 70px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.caption-border {}
