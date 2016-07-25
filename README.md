@@ -1,2 +1,2 @@
 # Tech-Builds
-A responsive website for a Construction Company
+A responsive website providing information about fancy buildings and structures: Facilities and technology used in building them
